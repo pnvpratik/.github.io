@@ -1,10 +1,10 @@
 # Site settings
-title:       Whimsical Code
+title:       Pratik's blog!
 email:       pnvpratik@gmail.com  
 author:      Pratik Vasani
 description: "My personal blog where I talk  about things I am working on."
 baseurl:     ""
-url:         "http://pnvpratik.github.io/"
+url:         "http://pratikvasani.github.io/"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -42,7 +42,7 @@ paypal_url:
 flattr_button:
 
 # Post sharing icons
-show_sharing_icons: true
+show_sharing_icons: false
 share_text: 'Share this post!'
 # Change to 'true' to enable individual icons
 share_facebook: false
