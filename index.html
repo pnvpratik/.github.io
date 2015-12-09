@@ -4,12 +4,12 @@ layout: default
 
 <div class="home">
 
-  <div class="posts">
+  <div class="list-group">
     {% for post in paginator.posts %}
-      <div class="post py3">
+      <div class="list-group-item">
         <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-        <p class="post-summary">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item-heading"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+        <p class="list-group-item-text">
           {% if post.summary %}
             {{ post.summary }}
           {% else %}
