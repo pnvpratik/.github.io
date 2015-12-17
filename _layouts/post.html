@@ -7,9 +7,6 @@ single: true
 
 <div data-type="ad" data-publisher="lqm.youvebeenhacked.site" data-zone="ron" data-format="728x90"></div>
 
-{% unless page.sharing == false %}
-	{% include post/sharing.html %}
-{% endunless %}
 
 <div id="page-navigation"> 
         <div class="previous"> 
@@ -27,4 +24,5 @@ single: true
         </div>
 </div> 
 
+{% if site.disqus_short_name and page.comments == true %}
 
