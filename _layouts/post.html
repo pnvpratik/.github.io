@@ -3,10 +3,12 @@ layout: default
 single: true
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">{% include article.html %}</article>
 
 <div data-type="ad" data-publisher="lqm.youvebeenhacked.site" data-zone="ron" data-format="728x90"></div>
 
+{% unless page.sharing == false %}
+	{% include post/sharing.html %}
+{% endunless %}
 
 <div id="page-navigation"> 
         <div class="previous"> 
@@ -24,3 +26,9 @@ single: true
         </div>
 </div> 
 
+{% if site.disqus_short_name and page.comments == true %}
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+</section>
+{% endif %}
