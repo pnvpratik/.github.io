@@ -1,2 +1,13 @@
-<li><a href="{{ site.baseurl }}/about/">About</a></li>
-<li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+<ul class="main-navigation">
+  <li><a href="/about/">About</a></li>
+  <li><a href="/archive">Archives</a></li>
+  <li><a href="https://www.linkedin.com/in/pnvpratik">Contact</a></li>
+</ul>
+
+{% if site.description %}
+<section class="aboutme">
+  <p>
+    {{ site.description }}
+  </p>
+</section>
+{% endif %}

@@ -3,7 +3,7 @@ layout:     post
 title:      Update your browser!
 date:       2015-11-30
 summary:    Old Browsers
-categories: IE, Firefox , IE7 , 
+categories: Firefox  IE7 Chrome 
 ---
 
 One of my biggest pet peeve as a Software Analyst is when I see someone using the internet using one of the old browsers like “IE 7/8/9/10” . Then there are others who keep ignoring the update to latest version messages that they get from Firefox / Chrome. I can’t be bothered to get the newest one they tell you.  I will do it later say the others . What most don’t realize that in this day and age , they are exposing themselves to huge security risks. 

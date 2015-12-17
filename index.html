@@ -2,23 +2,23 @@
 layout: default
 ---
 
-<div class="home">
-
-  <div class="list-group">
-    {% for post in paginator.posts %}
-      <div class="list-group-item">
-        <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item-heading"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-        <p class="list-group-item-text">
-          {% if post.summary %}
-            {{ post.summary }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-        </p>
-      </div>
-    {% endfor %}
-  </div>
-
-  {% include pagination.html %}
+{% assign index = true %}
+<div itemscope itemtype="http://schema.org/Blog">
+{% for post in paginator.posts %}
+{% unless post.redirect %}
+{% assign content = post.content %}
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        {% include article.html %}
+    </article>
+{% endunless %}
+{% endfor %}
 </div>
+<nav id="pagenavi">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}" class="prev">Prev</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
+    {% endif %}
+    <div class="center"><a href="/archive">Blog Archives</a></div>
+</nav>

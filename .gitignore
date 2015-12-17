@@ -1,6 +1,14 @@
 _site
-.sass-cache
-.DS_Store
 
-# Ignore the config file that's used for gh-pages.
-_config.gh-pages.yml
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
