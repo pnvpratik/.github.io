@@ -24,11 +24,11 @@ MVC 6 has taken IOC to the next level. To an extent that everything has to be in
 The way to include Localization is to  use  the `AddViewLocalization()` and `AddDataAnnotationsLocalization()` functions
 
 ```csharp
-       services.AddLocalization(options => 
-	   				options.ResourcesPath = "Resources");
-       services.AddMvc()
-               .AddViewLocalization()
-               .AddDataAnnotationsLocalization();
+	   services.AddLocalization(options => 
+					options.ResourcesPath = "Resources");
+	   services.AddMvc()
+			   .AddViewLocalization()
+			   .AddDataAnnotationsLocalization();
 ```
 
 ## Step 3 
@@ -38,18 +38,18 @@ We must now configure the Localization services we have added.
 ```csharp
 
 var requestLocalizationOptions = new RequestLocalizationOptions
-            {
-                SupportedCultures = new List<CultureInfo>
-                {
-                    new CultureInfo("hi-IN"),
+			{
+				SupportedCultures = new List<CultureInfo>
+				{
+					new CultureInfo("hi-IN"),
 					new CultureInfo("en-GB"),
-                },
-                SupportedUICultures = new List<CultureInfo>
-                {
-                    new CultureInfo("hi-IN"),
+				},
+				SupportedUICultures = new List<CultureInfo>
+				{
+					new CultureInfo("hi-IN"),
 					new CultureInfo("en-GB"),
-                }
-            };
+				}
+			};
 
 app.UseRequestLocalization(requestLocalizationOptions,
 				 new RequestCulture(new CultureInfo("hi-IN")));
@@ -66,11 +66,11 @@ Now  that we are done  with  all the  configuration , we need to put it all to u
 ```csharp
 
  public class LoginViewModel
-    {
-        [Required(ErrorMessageResourceName ="EmailRequired",
+	{
+		[Required(ErrorMessageResourceName ="EmailRequired",
 			ErrorMessageResourceType 
 				= typeof(MVC6_RESX.Resources.Resource))]
-        public string Email { get; set; }
+		public string Email { get; set; }
 		...
 	}
 ```

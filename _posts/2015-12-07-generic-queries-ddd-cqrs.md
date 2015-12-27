@@ -6,6 +6,8 @@ categories: CQRS DDD dynamic
 ---
 
 Article text coming soon!
+
+
 ```csharp
 // this function will only retrieve the required columns from table
 public IEnumerable<dynamic> GenericGet(Func<Employee, dynamic> selectClause)
