@@ -17,6 +17,20 @@ github_repo_url: https://github.com/pratikvasani/pratikvasani.github.io/
 twitter_user: 
 twitter_tweet_button: false
 
+# Post sharing icons
+show_sharing_icons: true
+share_text: 'Share this post!'
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: false
+share_linkedin: true
+share_digg: false
+share_tumblr: false
+share_reddit: true
+share_stumbleupon: false
+share_hackernews: false
+
 # Disqus Comments
 disqus_short_name: pnvpratikgithubio
 disqus_show_comment_count: true
@@ -30,9 +44,9 @@ google_analytics_tracking_id: UA-71561210-1
 #
 markdown: redcarpet
 redcarpet:
-  extensions: ["tables"]
+  extensions: ["tables","pretify"]
 permalink: /archive/:year/:month/:day/:title/
-paginate: 20
+paginate: 5
 paginate_path: "page/:num"
 category_dir: categories
 
