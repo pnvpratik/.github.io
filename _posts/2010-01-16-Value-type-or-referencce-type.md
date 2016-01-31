@@ -5,6 +5,7 @@ date:       2010-01-16
 summary:    .NET String
 categories: .NET String Interview_Question 
 ---
+
 This looks like a amateur question , but don't be surprised if you get the answer wrong.
 There is more to understand in value types and reference types than saying
 
