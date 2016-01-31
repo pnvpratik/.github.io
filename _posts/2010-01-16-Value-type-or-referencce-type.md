@@ -1,9 +1,9 @@
 ﻿---
 layout:     post
-title:      Value types or reference types 
-date:       2010-01-16
-summary:    DOTNET String
-categories: DOTNET String InterviewQuestion 
+title:      test
+date:       2015-12-25
+summary:    Localization in MVC6.
+categories: MVC6 Localization 
 ---
 
 This looks like a amateur question , but don't be surprised if you get the answer wrong.
