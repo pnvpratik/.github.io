@@ -1,9 +1,9 @@
 ﻿---
 layout:     post
-title:      Value types or reference types . Stack or heap ? copy by value or copy by reference ?.
+title:      Value types or reference types 
 date:       2010-01-16
-summary:    .NET String
-categories: .NET String Interview_Question 
+summary:    DOTNET String
+categories: DOTNET String Interview_Question 
 ---
 
 This looks like a amateur question , but don't be surprised if you get the answer wrong.
@@ -35,6 +35,7 @@ What he is essentially trying to say is don't try to categorize value types by w
 
 
 To understand the true meaning of what Eric is trying to say we need to have a detailed look at some of the value types and reference types in .NET
+
 ```csharp
 int i;
 
