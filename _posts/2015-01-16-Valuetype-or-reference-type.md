@@ -1,7 +1,7 @@
 ﻿---
 layout:     post
 title:      test
-date:       2015-12-25
+date:       2015-01-16
 summary:    Localization in MVC6.
 categories: MVC6 Localization 
 ---
