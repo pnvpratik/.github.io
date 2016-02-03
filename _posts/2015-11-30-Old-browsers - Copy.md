@@ -1,9 +1,9 @@
 ﻿---
 layout:     post
-title:      test
-date:       2015-01-16
-summary:    Localization in MVC6.
-categories: MVC6 Localization 
+title:      vt
+date:       2015-11-30
+summary:    Old Browsers
+categories: Firefox  IE7 Chrome 
 ---
 
 This looks like a amateur question , but don't be surprised if you get the answer wrong.
