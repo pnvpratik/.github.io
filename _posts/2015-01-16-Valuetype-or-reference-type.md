@@ -1,8 +1,8 @@
 ﻿---
 layout:     post
-title:      test
-date:       2015-01-16
-summary:    Localization in MVC6.
+title:      Value type
+date:       2015-12-25
+summary:    Value types.
 categories: MVC6 Localization 
 ---
 
