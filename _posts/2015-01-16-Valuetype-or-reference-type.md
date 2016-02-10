@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      Value type
 date:       2015-12-25
