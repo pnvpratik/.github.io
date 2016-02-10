@@ -13,13 +13,13 @@ This is what we came up with.
 ```csharp
 // this function will only retrieve the required columns from table
 public IEnumerable<dynamic> GenericGet(
-								Func<Employee, dynamic> selectClause)
-        {
-            var a = db.Employee
-						.Where(x => x.IsInitial == true)
-						.Select(selectClause).AsNoTracking();
-            return a;
-        }
+	Func<Employee, dynamic> selectClause)
+{
+	var a = db.Employee
+		.Where(x => x.IsInitial == true)
+		.Select(selectClause).AsNoTracking();
+        return a;
+}
 ```
 The code above will make sure that only the columns requested in the select clause are requested from the SQL server.
 It also makes sure that you dont have to write a class for return type of each query instead using dynamic.
@@ -30,11 +30,12 @@ The calling functions shown below helps with this.
 
 ```csharp
 // calling the function  
-        Func<Employee, dynamic> t = emp => new { emp.Name, emp.Email };
-        var qryEmployee_Name_Email = GenericGet(t);
+Func<Employee, dynamic> t = 
+	emp => new { emp.Name, emp.Email };
+
+var qryEmployee_Name_Email = GenericGet(t);
 ```
 
 Now its obvious the disadvantages this code has , the most annoying one being it has no compile time safety , if the code tries to access a property in the result and it  does not exist , it will throw a runtime exception instead of a compile time error.
 
 We ended up discussing the requirement and coming up with a simpler UI to solve the issue but hey if this rocks your boat it rocks your boat.
-s
