@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Value type
-date:       2015-12-25
+title:      Value type or reference type.
+date:       2014-01-25
 summary:    Value types.
-categories: MVC6 Localization 
+categories: String .Net ValueType 
 ---
 
 This looks like a amateur question , but don't be surprised if you get the answer wrong.
