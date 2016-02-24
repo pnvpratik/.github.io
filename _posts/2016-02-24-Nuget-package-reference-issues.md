@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      Reference issues with Nuget packages
