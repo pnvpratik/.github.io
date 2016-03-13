@@ -4,6 +4,7 @@ title:      How to use localization RESX in MVC 6
 date:       2015-12-25
 summary:    Localization in MVC6.
 categories: MVC6 Localization 
+comments: 	true
 ---
 
 A few months  ago I asked  a  question on stack overflow about how  to implement Localization in MVC 6 , unfortunately at that time MVC 6 was still in Beta 7 and the Localizaton services were not complete.
